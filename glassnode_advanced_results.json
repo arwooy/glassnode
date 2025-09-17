@@ -1,0 +1,799 @@
+{
+  "analysis_time": "2025-09-17T21:12:54.269728",
+  "indicators": {
+    "sopr": {
+      "optimal_horizon": {
+        "optimal_horizon_ig": 60,
+        "max_ig": 0.13391483684908856,
+        "optimal_horizon_mi": 60,
+        "max_mi": 0.05815872966437505,
+        "optimal_horizon_corr": 60,
+        "max_correlation": 0.18652983298007725,
+        "all_horizons": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30,
+          45,
+          60
+        ],
+        "all_ig": [
+          0.058098028333582796,
+          0.06441030337765863,
+          0.04571018101244695,
+          0.057529902230186725,
+          0.081045639604024,
+          0.07559341473463643,
+          0.08074275630926575,
+          0.0830648222514263,
+          0.09507277671233316,
+          0.11927723121795086,
+          0.13391483684908856
+        ]
+      },
+      "multi_horizon_ig": {
+        "1": 0.058098028333582796,
+        "2": 0.06441030337765863,
+        "3": 0.04571018101244695,
+        "5": 0.057529902230186725,
+        "7": 0.081045639604024,
+        "10": 0.07559341473463643,
+        "14": 0.08074275630926575,
+        "21": 0.0830648222514263,
+        "30": 0.09507277671233316,
+        "45": 0.11927723121795086,
+        "60": 0.13391483684908856
+      },
+      "best_threshold": {
+        "percentile": 90,
+        "sharpe": 0.6974176047703138,
+        "return_7d": 0.10759862021621447,
+        "sample_ratio": 0.10013717421124829
+      }
+    },
+    "net_unrealized_profit_loss": {
+      "optimal_horizon": {
+        "optimal_horizon_ig": 45,
+        "max_ig": 0.5040026924700605,
+        "optimal_horizon_mi": 45,
+        "max_mi": 0.2188880240857659,
+        "optimal_horizon_corr": 60,
+        "max_correlation": 0.6097568008948847,
+        "all_horizons": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30,
+          45,
+          60
+        ],
+        "all_ig": [
+          0.06263630076133442,
+          0.089610140659099,
+          0.08254970076419621,
+          0.1221719650686075,
+          0.1241730143489379,
+          0.17173703766375015,
+          0.21849510218979917,
+          0.3006697389919588,
+          0.3299011402676508,
+          0.5040026924700605,
+          0.49549316886837813
+        ]
+      },
+      "multi_horizon_ig": {
+        "1": 0.06263630076133442,
+        "2": 0.089610140659099,
+        "3": 0.08254970076419621,
+        "5": 0.1221719650686075,
+        "7": 0.1241730143489379,
+        "10": 0.17173703766375015,
+        "14": 0.21849510218979917,
+        "21": 0.3006697389919588,
+        "30": 0.3299011402676508,
+        "45": 0.5040026924700605,
+        "60": 0.49549316886837813
+      },
+      "best_threshold": {
+        "percentile": 90,
+        "sharpe": 0.6818760322472643,
+        "return_7d": 0.05715567940278769,
+        "sample_ratio": 0.10013717421124829
+      }
+    },
+    "reserve_risk": {
+      "optimal_horizon": {
+        "optimal_horizon_ig": 60,
+        "max_ig": 0.598863341977814,
+        "optimal_horizon_mi": 60,
+        "max_mi": 0.2600841850798172,
+        "optimal_horizon_corr": 60,
+        "max_correlation": 0.7040416523132043,
+        "all_horizons": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30,
+          45,
+          60
+        ],
+        "all_ig": [
+          0.0613923457995047,
+          0.08974227202655483,
+          0.09556819540001449,
+          0.10361735942604611,
+          0.11320580310359896,
+          0.15597246123689068,
+          0.22837601202468916,
+          0.2814289967018908,
+          0.36141927605279633,
+          0.5206766993519669,
+          0.598863341977814
+        ]
+      },
+      "multi_horizon_ig": {
+        "1": 0.0613923457995047,
+        "2": 0.08974227202655483,
+        "3": 0.09556819540001449,
+        "5": 0.10361735942604611,
+        "7": 0.11320580310359896,
+        "10": 0.15597246123689068,
+        "14": 0.22837601202468916,
+        "21": 0.2814289967018908,
+        "30": 0.36141927605279633,
+        "45": 0.5206766993519669,
+        "60": 0.598863341977814
+      },
+      "best_threshold": {
+        "percentile": 90,
+        "sharpe": 0.41410131476106177,
+        "return_7d": 0.03321009041191442,
+        "sample_ratio": 0.10013717421124829
+      }
+    },
+    "profit_relative": {
+      "optimal_horizon": {
+        "optimal_horizon_ig": 45,
+        "max_ig": 0.29399748491751554,
+        "optimal_horizon_mi": 45,
+        "max_mi": 0.12768290630432,
+        "optimal_horizon_corr": 60,
+        "max_correlation": 0.4535392785508131,
+        "all_horizons": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          10,
+          14,
+          21,
+          30,
+          45,
+          60
+        ],
+        "all_ig": [
+          0.05468419140875458,
+          0.08596949950619415,
+          0.07657242015838683,
+          0.0805524798613857,
+          0.08905193460702732,
+          0.12120276227662607,
+          0.14631442058719957,
+          0.20232442375087434,
+          0.23520489227382502,
+          0.29399748491751554,
+          0.2628456000652286
+        ]
+      },
+      "multi_horizon_ig": {
+        "1": 0.05468419140875458,
+        "2": 0.08596949950619415,
+        "3": 0.07657242015838683,
+        "5": 0.0805524798613857,
+        "7": 0.08905193460702732,
+        "10": 0.12120276227662607,
+        "14": 0.14631442058719957,
+        "21": 0.20232442375087434,
+        "30": 0.23520489227382502,
+        "45": 0.29399748491751554,
+        "60": 0.2628456000652286
+      },
+      "best_threshold": {
+        "percentile": 90,
+        "sharpe": 1.250141302750723,
+        "return_7d": 0.07142020093434173,
+        "sample_ratio": 0.10013717421124829
+      }
+    }
+  },
+  "combinations_2": [
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.20582450385216364,
+      "avg_mi": 0.08938888853178821
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.2044546156577136,
+      "avg_mi": 0.08879394887852678
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.2035177044942794,
+      "avg_mi": 0.08838705189644165
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "pca",
+      "avg_ig": 0.19036612085722546,
+      "avg_mi": 0.08267536688403905
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "mean",
+      "avg_ig": 0.18981357076663086,
+      "avg_mi": 0.08243539646518987
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1896675340392963,
+      "avg_mi": 0.08237196994796703
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.18655043061868462,
+      "avg_mi": 0.08101821524645553
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.16958383622441345,
+      "avg_mi": 0.07364968613497418
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.1693630579196798,
+      "avg_mi": 0.0735538029505144
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.16909969891537302,
+      "avg_mi": 0.07343943012486005
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1683399350987036,
+      "avg_mi": 0.07310945878923246
+    },
+    {
+      "indicators": [
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.16568065418486078,
+      "avg_mi": 0.07195454658193214
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.16364321144160657,
+      "avg_mi": 0.0710696910339395
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.16242111383312588,
+      "avg_mi": 0.07053894665074396
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.16205639246375267,
+      "avg_mi": 0.07038054953659716
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1612437175118059,
+      "avg_mi": 0.07002760490378546
+    },
+    {
+      "indicators": [
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.14871008459979004,
+      "avg_mi": 0.0645842899146505
+    },
+    {
+      "indicators": [
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.1486484456435672,
+      "avg_mi": 0.06455752034860752
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.14796662703356725,
+      "avg_mi": 0.06426141194796363
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.14281614936503928,
+      "avg_mi": 0.06202457530939032
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.14252466865008406,
+      "avg_mi": 0.06189798633502422
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.13349673009450122,
+      "avg_mi": 0.057977183248480224
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.13349673009450122,
+      "avg_mi": 0.057977183248480224
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr"
+      ],
+      "method": "mean",
+      "avg_ig": 0.12633258090976676,
+      "avg_mi": 0.0548658213750558
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr"
+      ],
+      "method": "pca",
+      "avg_ig": 0.12633258090976676,
+      "avg_mi": 0.0548658213750558
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "mean",
+      "avg_ig": 0.1243379803888011,
+      "avg_mi": 0.05399957759150157
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "pca",
+      "avg_ig": 0.1243379803888011,
+      "avg_mi": 0.05399957759150157
+    },
+    {
+      "indicators": [
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1190808199168621,
+      "avg_mi": 0.05171640526110346
+    },
+    {
+      "indicators": [
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.10771469752275269,
+      "avg_mi": 0.046780142897242825
+    },
+    {
+      "indicators": [
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.10771469752275269,
+      "avg_mi": 0.046780142897242825
+    }
+  ],
+  "combinations_3": [
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.18935341491843394,
+      "avg_mi": 0.08223554349605862
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1893155274363109,
+      "avg_mi": 0.08221909421704372
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.1876325164296128,
+      "avg_mi": 0.08148816800051956
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.18683200942255343,
+      "avg_mi": 0.08114050701595098
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.18430927458744698,
+      "avg_mi": 0.08004488888571931
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.18407675221105388,
+      "avg_mi": 0.07994390388558575
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.1807067322508452,
+      "avg_mi": 0.07848031832103404
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.17839701629670154,
+      "avg_mi": 0.07747721648007656
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.17551967492249085,
+      "avg_mi": 0.07622760597853785
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.17226687409422028,
+      "avg_mi": 0.07481492843881284
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.16744149746111123,
+      "avg_mi": 0.07271928083829175
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.16594550266360866,
+      "avg_mi": 0.07206957514463379
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.16368557301622513,
+      "avg_mi": 0.07108808950878953
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.16353242909098706,
+      "avg_mi": 0.07102158563949498
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.16326860286353032,
+      "avg_mi": 0.07090701129488214
+    },
+    {
+      "indicators": [
+        "net_unrealized_profit_loss",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.16312331219202805,
+      "avg_mi": 0.0708439122518431
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.15949574585465384,
+      "avg_mi": 0.0692684621084385
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.15789472639047317,
+      "avg_mi": 0.06857314281254663
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "pca",
+      "avg_ig": 0.15717907306377335,
+      "avg_mi": 0.06826234078791991
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "pca",
+      "avg_ig": 0.1571610795022269,
+      "avg_mi": 0.06825453350739231
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.1468687470325533,
+      "avg_mi": 0.06378460463639456
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "weighted",
+      "avg_ig": 0.14143208734025725,
+      "avg_mi": 0.06142348646553853
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "net_unrealized_profit_loss"
+      ],
+      "method": "mean",
+      "avg_ig": 0.13990123254840828,
+      "avg_mi": 0.06075863391118163
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "reserve_risk"
+      ],
+      "method": "mean",
+      "avg_ig": 0.1362155142948905,
+      "avg_mi": 0.0591579438831766
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.1330615806082712,
+      "avg_mi": 0.057788190484841157
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.12989514510937816,
+      "avg_mi": 0.056413029367242795
+    },
+    {
+      "indicators": [
+        "sopr",
+        "reserve_risk",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.12820746231356717,
+      "avg_mi": 0.05568007473679106
+    },
+    {
+      "indicators": [
+        "price_usd_close",
+        "sopr",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.1267805805667206,
+      "avg_mi": 0.055060377997971845
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "pca",
+      "avg_ig": 0.12126285155802903,
+      "avg_mi": 0.05266405939987092
+    },
+    {
+      "indicators": [
+        "sopr",
+        "net_unrealized_profit_loss",
+        "profit_relative"
+      ],
+      "method": "mean",
+      "avg_ig": 0.11991262880155922,
+      "avg_mi": 0.05207766164248217
+    }
+  ]
+}

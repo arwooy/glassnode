@@ -1,0 +1,16 @@
+# 端点测试结果
+
+## 找到的端点:
+indicators/profit_relative → addresses/profit_relative
+supply/profit_total → supply/profit_sum
+transactions/volume_sum → transactions/transfers_volume_sum
+
+## 未找到的端点:
+- distribution/gini
+- distribution/herfindahl
+- distribution/balance_1pct_holders
+- fees/gas_price_mean
+- indicators/loss_relative
+- mining/hash_rate_30d_moving_average
+- supply/liquid
+- mempool/mempool_count

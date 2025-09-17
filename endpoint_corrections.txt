@@ -1,0 +1,7 @@
+# Glassnode端点修正
+
+indicators/sopr → indicators/sopr
+market/realized_price_usd → market/price_realized_usd
+entities/active_entities → entities/active_count
+fees/fees_total_usd → fees/volume_sum
+blockchain/utxo_total_value → blockchain/utxo_created_value_sum
