@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Data files
+*.csv
+*.xlsx
+*.xls
+
+# Output files
+*.html
+glassnode_test_intermediate.json
+endpoint_test_results.json
+all_categories_test_results.json
+glassnode_verified_endpoints.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Credentials (important!)
+credentials.json
+secrets.json
+*.key
+
+# Temporary files
+*.tmp
+*.bak
+*~
+test_*.json
+
+# Keep important config
+!glassnode_endpoints_config.json

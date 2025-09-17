@@ -1,0 +1,214 @@
+{
+  "analysis_date": "2025-09-17 13:08:37",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2024-12-31"
+  },
+  "market_overview": {
+    "total_days": 1460,
+    "regime_distribution": {
+      "Sideways": 68.4931506849315,
+      "Bull": 19.246575342465754,
+      "Bear": 10.479452054794521,
+      "Crash": 1.7808219178082192
+    },
+    "regime_counts": {
+      "Sideways": 1000,
+      "Bull": 281,
+      "Bear": 153,
+      "Crash": 26
+    },
+    "average_duration_days": {
+      "Sideways": 19.78,
+      "Crash": 1.8571428571428572,
+      "Bear": 6.12,
+      "Bull": 14.05
+    },
+    "current_regime": "Sideways",
+    "volatility_stats": {
+      "mean": 0.5795002594370081,
+      "current": 0.447624958822129
+    }
+  },
+  "trading_signals": [
+    {
+      "type": "SELL",
+      "strength": "Strong",
+      "indicator": "MVRV Z-Score",
+      "value": 2.716384849516884,
+      "reason": "MVRV Z-Score > 2.5 表明市场过热"
+    }
+  ],
+  "top_indicators": [
+    {
+      "metric": "supply_loss_sum",
+      "score": 36.88849075739095,
+      "optimal_lag": 0,
+      "correlation": -0.8021848340925241,
+      "accuracy": 52.40054869684499
+    },
+    {
+      "metric": "market_price_usd_close",
+      "score": 33.964334705075444,
+      "optimal_lag": 0,
+      "correlation": 1.0,
+      "accuracy": 46.98216735253772
+    },
+    {
+      "metric": "market_marketcap_usd",
+      "score": 33.9138253424142,
+      "optimal_lag": 0,
+      "correlation": 0.9987372659334688,
+      "accuracy": 46.98216735253772
+    },
+    {
+      "metric": "market_price_realized_usd",
+      "score": 26.859648197453865,
+      "optimal_lag": -14,
+      "correlation": 0.7332195999980751,
+      "accuracy": 48.76543209876543
+    },
+    {
+      "metric": "supply_profit_relative",
+      "score": 26.113379433915412,
+      "optimal_lag": 0,
+      "correlation": 0.8037261182209992,
+      "accuracy": 46.98216735253772
+    },
+    {
+      "metric": "mining_hash_rate_mean",
+      "score": 25.2312556357727,
+      "optimal_lag": 0,
+      "correlation": 0.5553355747077607,
+      "accuracy": 51.508916323731135
+    },
+    {
+      "metric": "mining_revenue_sum",
+      "score": 23.995276283788435,
+      "optimal_lag": -14,
+      "correlation": -0.5415828673141897,
+      "accuracy": 51.16598079561042
+    },
+    {
+      "metric": "market_mvrv",
+      "score": 23.25533049852846,
+      "optimal_lag": 0,
+      "correlation": 0.7288455395551183,
+      "accuracy": 47.05075445816186
+    },
+    {
+      "metric": "mining_difficulty_latest",
+      "score": 22.696024616502168,
+      "optimal_lag": 0,
+      "correlation": 0.5639712601313472,
+      "accuracy": 50.06858710562414
+    },
+    {
+      "metric": "market_mvrv_z_score",
+      "score": 20.79511145968866,
+      "optimal_lag": 0,
+      "correlation": 0.6364758660532588,
+      "accuracy": 47.668038408779154
+    },
+    {
+      "metric": "mining_marketcap_thermocap_ratio",
+      "score": 18.44098123232711,
+      "optimal_lag": 0,
+      "correlation": 0.5981987420564634,
+      "accuracy": 47.25651577503429
+    },
+    {
+      "metric": "transactions_transfers_from_exchanges_count",
+      "score": 17.38091047206764,
+      "optimal_lag": -14,
+      "correlation": -0.3796530773023768,
+      "accuracy": 51.09739368998628
+    },
+    {
+      "metric": "addresses_receiving_count",
+      "score": 15.269073808809532,
+      "optimal_lag": -14,
+      "correlation": -0.3302865160021311,
+      "accuracy": 51.028806584362144
+    },
+    {
+      "metric": "mining_thermocap",
+      "score": 14.264716641719515,
+      "optimal_lag": 0,
+      "correlation": 0.3531885607617809,
+      "accuracy": 50.06858710562414
+    },
+    {
+      "metric": "addresses_sending_count",
+      "score": 13.412707273552964,
+      "optimal_lag": -14,
+      "correlation": -0.33874703712003107,
+      "accuracy": 49.93141289437586
+    },
+    {
+      "metric": "addresses_active_count",
+      "score": 11.573135512150452,
+      "optimal_lag": -13,
+      "correlation": -0.2893283878037613,
+      "accuracy": 50.0
+    },
+    {
+      "metric": "derivatives_futures_volume_daily_sum",
+      "score": 11.531147706222933,
+      "optimal_lag": 0,
+      "correlation": -0.21969158703143052,
+      "accuracy": 51.371742112482856
+    },
+    {
+      "metric": "transactions_transfers_count",
+      "score": 11.47215871367014,
+      "optimal_lag": -14,
+      "correlation": -0.19421137524916113,
+      "accuracy": 51.85185185185185
+    },
+    {
+      "metric": "derivatives_futures_funding_rate_perpetual",
+      "score": 11.325306861309848,
+      "optimal_lag": 0,
+      "correlation": 0.2591271845642966,
+      "accuracy": 50.48010973936899
+    },
+    {
+      "metric": "derivatives_futures_open_interest_sum",
+      "score": 8.261902542401494,
+      "optimal_lag": -14,
+      "correlation": -0.07280270759295907,
+      "accuracy": 52.674897119341566
+    }
+  ],
+  "metric_count": 27,
+  "metrics_available": [
+    "market_price_usd_close",
+    "market_marketcap_usd",
+    "market_mvrv",
+    "market_mvrv_z_score",
+    "market_price_realized_usd",
+    "supply_profit_relative",
+    "supply_loss_sum",
+    "supply_active_more_1y_percent",
+    "addresses_active_count",
+    "addresses_sending_count",
+    "addresses_receiving_count",
+    "addresses_accumulation_count",
+    "transactions_transfers_to_exchanges_count",
+    "transactions_transfers_from_exchanges_count",
+    "transactions_transfers_count",
+    "transactions_transfers_volume_sum",
+    "mining_hash_rate_mean",
+    "mining_difficulty_latest",
+    "mining_revenue_sum",
+    "mining_thermocap",
+    "mining_marketcap_thermocap_ratio",
+    "derivatives_futures_open_interest_sum",
+    "derivatives_futures_volume_daily_sum",
+    "derivatives_futures_funding_rate_perpetual",
+    "derivatives_options_open_interest_put_call_ratio",
+    "derivatives_futures_liquidated_volume_long_sum",
+    "institutions_purpose_etf_holdings_sum"
+  ]
+}

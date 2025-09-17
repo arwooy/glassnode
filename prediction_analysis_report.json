@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-09-17 13:20:26",
+  "summary": {},
+  "best_indicators": {
+    "1": {
+      "indicator": "market_mvrv",
+      "f1_score": 0.5112781954887218,
+      "accuracy": 0.5,
+      "precision": 0.5013404825737265,
+      "recall": 0.5216178521617852
+    },
+    "3": {
+      "indicator": "market_mvrv",
+      "f1_score": 0.5200534759358288,
+      "accuracy": 0.4979020979020979,
+      "precision": 0.5214477211796247,
+      "recall": 0.5186666666666667
+    },
+    "7": {
+      "indicator": "market_mvrv",
+      "f1_score": 0.506380120886501,
+      "accuracy": 0.486013986013986,
+      "precision": 0.5053619302949062,
+      "recall": 0.5074024226110363
+    },
+    "14": {
+      "indicator": "market_mvrv",
+      "f1_score": 0.5102990033222591,
+      "accuracy": 0.4846153846153846,
+      "precision": 0.514745308310992,
+      "recall": 0.5059288537549407
+    },
+    "30": {
+      "indicator": "market_mvrv",
+      "f1_score": 0.5171503957783641,
+      "accuracy": 0.4881118881118881,
+      "precision": 0.5254691689008043,
+      "recall": 0.509090909090909
+    }
+  },
+  "regime_analysis": {
+    "Bull": {
+      "best_indicator": "addresses_active_count",
+      "best_f1": 0.19318181818181815,
+      "best_accuracy": 0.4107883817427386
+    },
+    "Bear": {
+      "best_indicator": "indicators_reserve_risk",
+      "best_f1": 0.6814159292035399,
+      "best_accuracy": 0.5324675324675324
+    },
+    "Sideways": {
+      "best_indicator": "market_mvrv",
+      "best_f1": 0.5353159851301115,
+      "best_accuracy": 0.5059288537549407
+    }
+  },
+  "recommendations": [
+    "短期交易（1天）: 使用 market_mvrv (准确率=50.0%, F1=0.511)",
+    "中期交易（7天）: 使用 market_mvrv (准确率=48.6%, F1=0.506)",
+    "长期投资（30天）: 使用 market_mvrv (准确率=48.8%, F1=0.517)",
+    "Bull市场: 优先使用 addresses_active_count (F1=0.193)",
+    "Bear市场: 优先使用 indicators_reserve_risk (F1=0.681)",
+    "Sideways市场: 优先使用 market_mvrv (F1=0.535)"
+  ]
+}

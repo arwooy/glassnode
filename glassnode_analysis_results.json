@@ -1,0 +1,122 @@
+{
+  "analysis_date": "2025-09-17 12:09:53",
+  "period": {
+    "start": "2023-01-01",
+    "end": "2024-12-31"
+  },
+  "correlations": {
+    "SOPR": 0.49069118598391975,
+    "MVRV": 0.9656247628364433,
+    "NUPL": 0.8616666472115926
+  },
+  "optimal_lags": {
+    "SOPR": {
+      "lag": 0,
+      "correlation": 0.49069118598391975
+    },
+    "MVRV": {
+      "lag": 0,
+      "correlation": 0.9656247628364434
+    },
+    "NUPL": {
+      "lag": 0,
+      "correlation": 0.8616666472115927
+    }
+  },
+  "prediction_power": {
+    "SOPR": {
+      "sensitivity": 0.16666666666666666,
+      "specificity": 0.9462209302325582,
+      "accuracy": 0.9013698630136986,
+      "lead_time": [
+        1,
+        2,
+        5
+      ]
+    },
+    "MVRV": {
+      "sensitivity": 0.09523809523809523,
+      "specificity": 0.9927325581395349,
+      "accuracy": 0.9410958904109589,
+      "lead_time": [
+        1
+      ]
+    },
+    "NUPL": {
+      "sensitivity": 0.09523809523809523,
+      "specificity": 0.9927325581395349,
+      "accuracy": 0.9410958904109589,
+      "lead_time": [
+        1
+      ]
+    }
+  },
+  "granger_causality": {
+    "SOPR": {
+      "1": {
+        "p_value": 0.7845979401548946,
+        "significant": "False"
+      },
+      "2": {
+        "p_value": 0.8018879287477483,
+        "significant": "False"
+      },
+      "3": {
+        "p_value": 0.8994083336360335,
+        "significant": "False"
+      },
+      "4": {
+        "p_value": 0.9305878870697899,
+        "significant": "False"
+      },
+      "5": {
+        "p_value": 0.8742503547179189,
+        "significant": "False"
+      }
+    },
+    "MVRV": {
+      "1": {
+        "p_value": 0.5681879018609968,
+        "significant": "False"
+      },
+      "2": {
+        "p_value": 0.3825076827924758,
+        "significant": "False"
+      },
+      "3": {
+        "p_value": 0.367520296748327,
+        "significant": "False"
+      },
+      "4": {
+        "p_value": 0.013082116161417136,
+        "significant": "True"
+      },
+      "5": {
+        "p_value": 0.02302440998910642,
+        "significant": "True"
+      }
+    },
+    "NUPL": {
+      "1": {
+        "p_value": 0.960984552707185,
+        "significant": "False"
+      },
+      "2": {
+        "p_value": 0.7792050315818368,
+        "significant": "False"
+      },
+      "3": {
+        "p_value": 0.774030570378396,
+        "significant": "False"
+      },
+      "4": {
+        "p_value": 0.8139396608422778,
+        "significant": "False"
+      },
+      "5": {
+        "p_value": 0.8992283891981083,
+        "significant": "False"
+      }
+    }
+  }
+}

@@ -1,0 +1,747 @@
+{
+  "timestamp": "2025-09-17 13:36:45",
+  "period": {
+    "start": "2021-01-01",
+    "end": "2024-12-31"
+  },
+  "summary": {
+    "best_indicators_by_horizon": {
+      "1": {
+        "information_gain": [
+          "mining_hash_rate_mean",
+          0.07882792024488428
+        ],
+        "mutual_information": [
+          "mining_hash_rate_mean",
+          0.027947737741777928
+        ],
+        "transfer_entropy": [
+          "market_mvrv",
+          0
+        ]
+      },
+      "3": {
+        "information_gain": [
+          "indicators_reserve_risk",
+          0.11140755214707587
+        ],
+        "mutual_information": [
+          "indicators_reserve_risk",
+          0.03785031680819478
+        ],
+        "transfer_entropy": [
+          "market_mvrv",
+          0
+        ]
+      },
+      "7": {
+        "information_gain": [
+          "market_mvrv_z_score",
+          0.1100936941568702
+        ],
+        "mutual_information": [
+          "indicators_net_unrealized_profit_loss",
+          0.06903318745719192
+        ],
+        "transfer_entropy": [
+          "market_mvrv",
+          0
+        ]
+      },
+      "14": {
+        "information_gain": [
+          "indicators_reserve_risk",
+          0.17602495137851637
+        ],
+        "mutual_information": [
+          "indicators_net_unrealized_profit_loss",
+          0.13263886225699903
+        ],
+        "transfer_entropy": [
+          "market_mvrv",
+          0
+        ]
+      },
+      "30": {
+        "information_gain": [
+          "indicators_reserve_risk",
+          0.28289927915625723
+        ],
+        "mutual_information": [
+          "indicators_reserve_risk",
+          0.2239539812937702
+        ],
+        "transfer_entropy": [
+          "market_mvrv",
+          0
+        ]
+      }
+    },
+    "best_indicators_by_metric": {},
+    "average_scores": {
+      "market_mvrv": {
+        "avg_information_gain": 0.11849329133052286,
+        "avg_mutual_information": 0.0892505756725969,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.06924795566770658
+      },
+      "market_mvrv_z_score": {
+        "avg_information_gain": 0.1331194826246648,
+        "avg_mutual_information": 0.08581796600781413,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.07297914954415964
+      },
+      "indicators_sopr": {
+        "avg_information_gain": 0.06224756703820873,
+        "avg_mutual_information": 0.006005250131667491,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.022750939056625407
+      },
+      "indicators_net_unrealized_profit_loss": {
+        "avg_information_gain": 0.11849329133052286,
+        "avg_mutual_information": 0.09126850725344085,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.0699205995279879
+      },
+      "indicators_puell_multiple": {
+        "avg_information_gain": 0.08018251219391681,
+        "avg_mutual_information": 0.02612168605259032,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.03543473274883571
+      },
+      "indicators_reserve_risk": {
+        "avg_information_gain": 0.14819471744680762,
+        "avg_mutual_information": 0.09170355881343148,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.07996609208674636
+      },
+      "supply_profit_relative": {
+        "avg_information_gain": 0.09958572917647253,
+        "avg_mutual_information": 0.049768295304549556,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.04978467482700736
+      },
+      "addresses_active_count": {
+        "avg_information_gain": 0.05983695113961192,
+        "avg_mutual_information": 0.011892256107019624,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.02390973574887718
+      },
+      "mining_hash_rate_mean": {
+        "avg_information_gain": 0.1284399661632813,
+        "avg_mutual_information": 0.042222187518236524,
+        "avg_transfer_entropy": 0.0,
+        "composite_score": 0.05688738456050594
+      }
+    },
+    "insights": [
+      "最高信息含量指标: indicators_reserve_risk (综合得分: 0.080)",
+      "最佳预测时间跨度: 30天 (平均IG: 0.181)"
+    ]
+  },
+  "detailed_results": {
+    "market_mvrv": {
+      "1": {
+        "information_gain": 0.054628831456830174,
+        "gain_ratio": 0.016444932029363455,
+        "symmetric_uncertainty": 0.016444932029363455,
+        "reduction_ratio": 0.016444932029363455,
+        "mutual_info_regression": 0.04501604656260927,
+        "normalized_mi_regression": 0.02335519326682006,
+        "mutual_info_classification": 0.034904194143440925,
+        "normalized_mi_classification": 0.015032426977595173,
+        "transfer_entropy": 0,
+        "correlation": 0.008384114821654992,
+        "correlation_squared": 7.029338134269492e-05
+      },
+      "3": {
+        "information_gain": 0.08692473931164368,
+        "gain_ratio": 0.02616701017039919,
+        "symmetric_uncertainty": 0.02616701017039919,
+        "reduction_ratio": 0.02616701017039919,
+        "mutual_info_regression": 0.06007316893375236,
+        "normalized_mi_regression": 0.026004883382371596,
+        "mutual_info_classification": 0.11070181524592781,
+        "normalized_mi_classification": 0.04767671861641745,
+        "transfer_entropy": 0,
+        "correlation": 0.014221768406658503,
+        "correlation_squared": 0.00020225869661262994
+      },
+      "7": {
+        "information_gain": 0.10490921912180351,
+        "gain_ratio": 0.031580889941603775,
+        "symmetric_uncertainty": 0.031580889941603775,
+        "reduction_ratio": 0.031580889941603775,
+        "mutual_info_regression": 0.1305030504619249,
+        "normalized_mi_regression": 0.05713926382020701,
+        "mutual_info_classification": 0.14142972133617482,
+        "normalized_mi_classification": 0.06091051938513774,
+        "transfer_entropy": 0,
+        "correlation": 0.009567486132483273,
+        "correlation_squared": 9.153679089525972e-05
+      },
+      "14": {
+        "information_gain": 0.13342352774735966,
+        "gain_ratio": 0.04016458415188,
+        "symmetric_uncertainty": 0.04016458415188,
+        "reduction_ratio": 0.04016458415188,
+        "mutual_info_regression": 0.33258753316307077,
+        "normalized_mi_regression": 0.13249547260018854,
+        "mutual_info_classification": 0.19363098990301175,
+        "normalized_mi_classification": 0.08339237779517455,
+        "transfer_entropy": 0,
+        "correlation": -0.0020593960170240647,
+        "correlation_squared": 4.241111954934581e-06
+      },
+      "30": {
+        "information_gain": 0.2125801390149773,
+        "gain_ratio": 0.06399299835371894,
+        "symmetric_uncertainty": 0.06399299835371894,
+        "reduction_ratio": 0.06399299835371894,
+        "mutual_info_regression": 0.5371827954985049,
+        "normalized_mi_regression": 0.20725806529339721,
+        "mutual_info_classification": 0.24421712549693053,
+        "normalized_mi_classification": 0.10517859103159592,
+        "transfer_entropy": 0,
+        "correlation": 0.007103266745861666,
+        "correlation_squared": 5.0456398462864184e-05
+      }
+    },
+    "market_mvrv_z_score": {
+      "1": {
+        "information_gain": 0.06488298887145527,
+        "gain_ratio": 0.019531743831939907,
+        "symmetric_uncertainty": 0.019531743831939907,
+        "reduction_ratio": 0.019531743831939907,
+        "mutual_info_regression": 0.031588434316019764,
+        "normalized_mi_regression": 0.016388689029384413,
+        "mutual_info_classification": 0.03669452195589029,
+        "normalized_mi_classification": 0.01580347964811386,
+        "transfer_entropy": 0,
+        "correlation": 0.008816748460439113,
+        "correlation_squared": 7.773505341465547e-05
+      },
+      "3": {
+        "information_gain": 0.09836366367191118,
+        "gain_ratio": 0.02961047692616836,
+        "symmetric_uncertainty": 0.02961047692616836,
+        "reduction_ratio": 0.02961047692616836,
+        "mutual_info_regression": 0.08574961276927962,
+        "normalized_mi_regression": 0.037119877638014116,
+        "mutual_info_classification": 0.1070611167899509,
+        "normalized_mi_classification": 0.04610875375994937,
+        "transfer_entropy": 0,
+        "correlation": 0.014456700925147678,
+        "correlation_squared": 0.00020899620163916574
+      },
+      "7": {
+        "information_gain": 0.1100936941568702,
+        "gain_ratio": 0.03314157580751739,
+        "symmetric_uncertainty": 0.03314157580751739,
+        "reduction_ratio": 0.03314157580751739,
+        "mutual_info_regression": 0.1421273975556736,
+        "normalized_mi_regression": 0.06222885086799138,
+        "mutual_info_classification": 0.17156863296446057,
+        "normalized_mi_classification": 0.07389065357219492,
+        "transfer_entropy": 0,
+        "correlation": 0.010383825543240511,
+        "correlation_squared": 0.0001078238329124541
+      },
+      "14": {
+        "information_gain": 0.1500286565002913,
+        "gain_ratio": 0.04516323845528582,
+        "symmetric_uncertainty": 0.04516323845528582,
+        "reduction_ratio": 0.04516323845528582,
+        "mutual_info_regression": 0.30523894835994714,
+        "normalized_mi_regression": 0.12160040496498788,
+        "mutual_info_classification": 0.20593955313079526,
+        "normalized_mi_classification": 0.08869339058925908,
+        "transfer_entropy": 0,
+        "correlation": -0.0014235633580616579,
+        "correlation_squared": 2.026532634415784e-06
+      },
+      "30": {
+        "information_gain": 0.24222840992279604,
+        "gain_ratio": 0.07291801722042024,
+        "symmetric_uncertainty": 0.07291801722042024,
+        "reduction_ratio": 0.07291801722042024,
+        "mutual_info_regression": 0.49699334646528204,
+        "normalized_mi_regression": 0.19175200753869284,
+        "mutual_info_classification": 0.2637844993247622,
+        "normalized_mi_classification": 0.11360580024230188,
+        "transfer_entropy": 0,
+        "correlation": 0.0113369407415134,
+        "correlation_squared": 0.00012852622537658638
+      }
+    },
+    "indicators_sopr": {
+      "1": {
+        "information_gain": 0.042128433288425526,
+        "gain_ratio": 0.012681933760183164,
+        "symmetric_uncertainty": 0.012681933760183164,
+        "reduction_ratio": 0.012681933760183164,
+        "mutual_info_regression": "0",
+        "normalized_mi_regression": 0.0,
+        "mutual_info_classification": "0",
+        "normalized_mi_classification": 0.0,
+        "transfer_entropy": 0,
+        "correlation": 0.02000339774922179,
+        "correlation_squared": 0.0004001359215135714
+      },
+      "3": {
+        "information_gain": 0.063249402236766,
+        "gain_ratio": 0.019040008226742296,
+        "symmetric_uncertainty": 0.019040008226742296,
+        "reduction_ratio": 0.019040008226742296,
+        "mutual_info_regression": 0.008584703121865545,
+        "normalized_mi_regression": 0.003716204880128509,
+        "mutual_info_classification": 0.01374037129594452,
+        "normalized_mi_classification": 0.005917661011307977,
+        "transfer_entropy": 0,
+        "correlation": 0.03641334984881612,
+        "correlation_squared": 0.001325932047212277
+      },
+      "7": {
+        "information_gain": 0.05393830754172768,
+        "gain_ratio": 0.01623708353156213,
+        "symmetric_uncertainty": 0.01623708353156213,
+        "reduction_ratio": 0.01623708353156213,
+        "mutual_info_regression": 0.010933771472940723,
+        "normalized_mi_regression": 0.004787226432875509,
+        "mutual_info_classification": 0.041892010237736255,
+        "normalized_mi_classification": 0.018041922712997382,
+        "transfer_entropy": 0,
+        "correlation": 0.03265004525596729,
+        "correlation_squared": 0.0010660254552167122
+      },
+      "14": {
+        "information_gain": 0.07228297954716689,
+        "gain_ratio": 0.02175939928876793,
+        "symmetric_uncertainty": 0.02175939928876793,
+        "reduction_ratio": 0.02175939928876793,
+        "mutual_info_regression": 0.024779313005757864,
+        "normalized_mi_regression": 0.009871526921594289,
+        "mutual_info_classification": 0.04924119726976217,
+        "normalized_mi_classification": 0.021207041950586314,
+        "transfer_entropy": 0,
+        "correlation": 0.016167059329222532,
+        "correlation_squared": 0.0002613738073546013
+      },
+      "30": {
+        "information_gain": 0.07963871257695754,
+        "gain_ratio": 0.02397364131213819,
+        "symmetric_uncertainty": 0.02397364131213819,
+        "reduction_ratio": 0.02397364131213819,
+        "mutual_info_regression": 0.03019845730246784,
+        "normalized_mi_regression": 0.011651292423739152,
+        "mutual_info_classification": 0.03548767163891231,
+        "normalized_mi_classification": 0.015283708275485522,
+        "transfer_entropy": 0,
+        "correlation": 0.04724561505968296,
+        "correlation_squared": 0.002232148142367741
+      }
+    },
+    "indicators_net_unrealized_profit_loss": {
+      "1": {
+        "information_gain": 0.054628831456830174,
+        "gain_ratio": 0.016444932029363455,
+        "symmetric_uncertainty": 0.016444932029363455,
+        "reduction_ratio": 0.016444932029363455,
+        "mutual_info_regression": 0.0453477728180367,
+        "normalized_mi_regression": 0.023527299246771247,
+        "mutual_info_classification": 0.03438444763924364,
+        "normalized_mi_classification": 0.014808584211333395,
+        "transfer_entropy": 0,
+        "correlation": 0.003292239474553443,
+        "correlation_squared": 1.0838840757807931e-05
+      },
+      "3": {
+        "information_gain": 0.08692473931164368,
+        "gain_ratio": 0.02616701017039919,
+        "symmetric_uncertainty": 0.02616701017039919,
+        "reduction_ratio": 0.02616701017039919,
+        "mutual_info_regression": 0.06256750954351586,
+        "normalized_mi_regression": 0.02708465057002147,
+        "mutual_info_classification": 0.10974028732073471,
+        "normalized_mi_classification": 0.04726261071557211,
+        "transfer_entropy": 0,
+        "correlation": 0.004698003832955517,
+        "correlation_squared": 2.207124001446473e-05
+      },
+      "7": {
+        "information_gain": 0.10490921912180351,
+        "gain_ratio": 0.031580889941603775,
+        "symmetric_uncertainty": 0.031580889941603775,
+        "reduction_ratio": 0.031580889941603775,
+        "mutual_info_regression": 0.15766814172862054,
+        "normalized_mi_regression": 0.06903318745719192,
+        "mutual_info_classification": 0.14192729341124233,
+        "normalized_mi_classification": 0.06112481220306575,
+        "transfer_entropy": 0,
+        "correlation": 0.0005981040380034496,
+        "correlation_squared": 3.5772844027603186e-07
+      },
+      "14": {
+        "information_gain": 0.13342352774735966,
+        "gain_ratio": 0.04016458415188,
+        "symmetric_uncertainty": 0.04016458415188,
+        "reduction_ratio": 0.04016458415188,
+        "mutual_info_regression": 0.3329474670634811,
+        "normalized_mi_regression": 0.13263886225699903,
+        "mutual_info_classification": 0.19413543917403153,
+        "normalized_mi_classification": 0.08360963239996924,
+        "transfer_entropy": 0,
+        "correlation": -0.005860138863037696,
+        "correlation_squared": 3.434122749408474e-05
+      },
+      "30": {
+        "information_gain": 0.2125801390149773,
+        "gain_ratio": 0.06399299835371894,
+        "symmetric_uncertainty": 0.06399299835371894,
+        "reduction_ratio": 0.06399299835371894,
+        "mutual_info_regression": 0.528890082294855,
+        "normalized_mi_regression": 0.2040585367362205,
+        "mutual_info_classification": 0.24440466196567234,
+        "normalized_mi_classification": 0.10525935859246689,
+        "transfer_entropy": 0,
+        "correlation": -0.003887880363716988,
+        "correlation_squared": 1.511561372257614e-05
+      }
+    },
+    "indicators_puell_multiple": {
+      "1": {
+        "information_gain": 0.044204575368842036,
+        "gain_ratio": 0.013306915376762884,
+        "symmetric_uncertainty": 0.013306915376762884,
+        "reduction_ratio": 0.013306915376762884,
+        "mutual_info_regression": "0",
+        "normalized_mi_regression": 0.0,
+        "mutual_info_classification": "0",
+        "normalized_mi_classification": 0.0,
+        "transfer_entropy": 0,
+        "correlation": 0.025417466591542665,
+        "correlation_squared": 0.0006460476079321875
+      },
+      "3": {
+        "information_gain": 0.06657503005593401,
+        "gain_ratio": 0.02004112410763255,
+        "symmetric_uncertainty": 0.02004112410763255,
+        "reduction_ratio": 0.02004112410763255,
+        "mutual_info_regression": 0.022066226488075547,
+        "normalized_mi_regression": 0.009552178729645725,
+        "mutual_info_classification": 0.040431435039891994,
+        "normalized_mi_classification": 0.017412886567149583,
+        "transfer_entropy": 0,
+        "correlation": 0.038601445346740294,
+        "correlation_squared": 0.001490071582857378
+      },
+      "7": {
+        "information_gain": 0.06328810752264147,
+        "gain_ratio": 0.01905165985426283,
+        "symmetric_uncertainty": 0.01905165985426283,
+        "reduction_ratio": 0.01905165985426283,
+        "mutual_info_regression": 0.046293993782474896,
+        "normalized_mi_regression": 0.02026929420166781,
+        "mutual_info_classification": "0",
+        "normalized_mi_classification": 0.0,
+        "transfer_entropy": 0,
+        "correlation": 0.03573499508926214,
+        "correlation_squared": 0.001276989874029589
+      },
+      "14": {
+        "information_gain": 0.10261282275572015,
+        "gain_ratio": 0.030889614629572917,
+        "symmetric_uncertainty": 0.030889614629572917,
+        "reduction_ratio": 0.030889614629572917,
+        "mutual_info_regression": 0.0951011127340462,
+        "normalized_mi_regression": 0.03788616715925769,
+        "mutual_info_classification": 0.03327074775481842,
+        "normalized_mi_classification": 0.014328939637645359,
+        "transfer_entropy": 0,
+        "correlation": 0.02888050001876086,
+        "correlation_squared": 0.000834083281333646
+      },
+      "30": {
+        "information_gain": 0.12423202526644639,
+        "gain_ratio": 0.037397566043527515,
+        "symmetric_uncertainty": 0.037397566043527515,
+        "reduction_ratio": 0.037397566043527515,
+        "mutual_info_regression": 0.16302971011541434,
+        "normalized_mi_regression": 0.06290079017238036,
+        "mutual_info_classification": 0.06857050845069335,
+        "normalized_mi_classification": 0.029531710564887122,
+        "transfer_entropy": 0,
+        "correlation": 0.049229884712553365,
+        "correlation_squared": 0.0024235815488112956
+      }
+    },
+    "indicators_reserve_risk": {
+      "1": {
+        "information_gain": 0.06877462032040027,
+        "gain_ratio": 0.02070324270816623,
+        "symmetric_uncertainty": 0.02070324270816623,
+        "reduction_ratio": 0.02070324270816623,
+        "mutual_info_regression": "0",
+        "normalized_mi_regression": 0.0,
+        "mutual_info_classification": 0.022885631678232432,
+        "normalized_mi_classification": 0.009856310838329902,
+        "transfer_entropy": 0,
+        "correlation": -0.009561401667850255,
+        "correlation_squared": 9.142040185396963e-05
+      },
+      "3": {
+        "information_gain": 0.11140755214707587,
+        "gain_ratio": 0.0335370870614888,
+        "symmetric_uncertainty": 0.0335370870614888,
+        "reduction_ratio": 0.0335370870614888,
+        "mutual_info_regression": 0.08743698029255942,
+        "normalized_mi_regression": 0.03785031680819478,
+        "mutual_info_classification": 0.09958974276097621,
+        "normalized_mi_classification": 0.04289100528431596,
+        "transfer_entropy": 0,
+        "correlation": -0.018075338237812814,
+        "correlation_squared": 0.00032671785241133804
+      },
+      "7": {
+        "information_gain": 0.10186718423178842,
+        "gain_ratio": 0.03066514421530546,
+        "symmetric_uncertainty": 0.03066514421530546,
+        "reduction_ratio": 0.03066514421530546,
+        "mutual_info_regression": 0.1516150018905642,
+        "normalized_mi_regression": 0.06638288960650515,
+        "mutual_info_classification": 0.15789855147719178,
+        "normalized_mi_classification": 0.06800326472945298,
+        "transfer_entropy": 0,
+        "correlation": -0.034611301265153833,
+        "correlation_squared": 0.0011979421752672393
+      },
+      "14": {
+        "information_gain": 0.17602495137851637,
+        "gain_ratio": 0.052988922507431716,
+        "symmetric_uncertainty": 0.052988922507431716,
+        "reduction_ratio": 0.052988922507431716,
+        "mutual_info_regression": 0.3271533284407586,
+        "normalized_mi_regression": 0.13033060635868723,
+        "mutual_info_classification": 0.24724861702822043,
+        "normalized_mi_classification": 0.106484246611968,
+        "transfer_entropy": 0,
+        "correlation": -0.059993138490851944,
+        "correlation_squared": 0.003599176665982541
+      },
+      "30": {
+        "information_gain": 0.28289927915625723,
+        "gain_ratio": 0.08516116881473655,
+        "symmetric_uncertainty": 0.08516116881473655,
+        "reduction_ratio": 0.08516116881473655,
+        "mutual_info_regression": 0.5804561842459695,
+        "normalized_mi_regression": 0.2239539812937702,
+        "mutual_info_classification": 0.31874077124017086,
+        "normalized_mi_classification": 0.13727417827537555,
+        "transfer_entropy": 0,
+        "correlation": -0.0846601175938044,
+        "correlation_squared": 0.0071673355109967895
+      }
+    },
+    "supply_profit_relative": {
+      "1": {
+        "information_gain": 0.04715806026040381,
+        "gain_ratio": 0.014196003739011068,
+        "symmetric_uncertainty": 0.014196003739011068,
+        "reduction_ratio": 0.014196003739011068,
+        "mutual_info_regression": "0",
+        "normalized_mi_regression": 0.0,
+        "mutual_info_classification": 0.012044335997315248,
+        "normalized_mi_classification": 0.005187216201846784,
+        "transfer_entropy": 0,
+        "correlation": 0.02475861892952261,
+        "correlation_squared": 0.0006129892112973153
+      },
+      "3": {
+        "information_gain": 0.0563153383339845,
+        "gain_ratio": 0.016952642511260916,
+        "symmetric_uncertainty": 0.016952642511260916,
+        "reduction_ratio": 0.016952642511260916,
+        "mutual_info_regression": 0.031591019696699085,
+        "normalized_mi_regression": 0.013675336222878845,
+        "mutual_info_classification": 0.02907701259564055,
+        "normalized_mi_classification": 0.01252279869710064,
+        "transfer_entropy": 0,
+        "correlation": 0.041613354676466596,
+        "correlation_squared": 0.0017316712874294042
+      },
+      "7": {
+        "information_gain": 0.08277143617335225,
+        "gain_ratio": 0.024916738852704384,
+        "symmetric_uncertainty": 0.024916738852704384,
+        "reduction_ratio": 0.024916738852704384,
+        "mutual_info_regression": 0.13041596058797378,
+        "normalized_mi_regression": 0.05710113251778804,
+        "mutual_info_classification": 0.06734069758262295,
+        "normalized_mi_classification": 0.029002085465227517,
+        "transfer_entropy": 0,
+        "correlation": 0.045722236423222505,
+        "correlation_squared": 0.0020905229035410545
+      },
+      "14": {
+        "information_gain": 0.13314915690794527,
+        "gain_ratio": 0.040081990093286765,
+        "symmetric_uncertainty": 0.040081990093286765,
+        "reduction_ratio": 0.040081990093286765,
+        "mutual_info_regression": 0.19115233240734586,
+        "normalized_mi_regression": 0.07615083578169375,
+        "mutual_info_classification": 0.07988660450214846,
+        "normalized_mi_classification": 0.03440530829674407,
+        "transfer_entropy": 0,
+        "correlation": 0.04839719183539978,
+        "correlation_squared": 0.0023422881775524876
+      },
+      "30": {
+        "information_gain": 0.1785346542066768,
+        "gain_ratio": 0.05374428620504715,
+        "symmetric_uncertainty": 0.05374428620504715,
+        "reduction_ratio": 0.05374428620504715,
+        "mutual_info_regression": 0.26414672808309536,
+        "normalized_mi_regression": 0.10191417200038715,
+        "mutual_info_classification": 0.09574255175976365,
+        "normalized_mi_classification": 0.041234072653058694,
+        "transfer_entropy": 0,
+        "correlation": 0.0755134703671373,
+        "correlation_squared": 0.005702284206888524
+      }
+    },
+    "addresses_active_count": {
+      "1": {
+        "information_gain": 0.055723954215921356,
+        "gain_ratio": 0.016774597132145217,
+        "symmetric_uncertainty": 0.016774597132145217,
+        "reduction_ratio": 0.016774597132145217,
+        "mutual_info_regression": 0.028137083509436778,
+        "normalized_mi_regression": 0.014598061658159554,
+        "mutual_info_classification": 0.014320745307503824,
+        "normalized_mi_classification": 0.006167612901048563,
+        "transfer_entropy": 0,
+        "correlation": 0.014381872855165217,
+        "correlation_squared": 0.0002068382668221381
+      },
+      "3": {
+        "information_gain": 0.05732479053748474,
+        "gain_ratio": 0.017256518557190965,
+        "symmetric_uncertainty": 0.017256518557190965,
+        "reduction_ratio": 0.017256518557190965,
+        "mutual_info_regression": 0.027486131284423898,
+        "normalized_mi_regression": 0.011898384110088131,
+        "mutual_info_classification": "0",
+        "normalized_mi_classification": 0.0,
+        "transfer_entropy": 0,
+        "correlation": 0.013165120508734267,
+        "correlation_squared": 0.00017332039800949561
+      },
+      "7": {
+        "information_gain": 0.04736065828019731,
+        "gain_ratio": 0.014257009529088793,
+        "symmetric_uncertainty": 0.014257009529088793,
+        "reduction_ratio": 0.014257009529088793,
+        "mutual_info_regression": "0",
+        "normalized_mi_regression": 0.0,
+        "mutual_info_classification": "0",
+        "normalized_mi_classification": 0.0,
+        "transfer_entropy": 0,
+        "correlation": -0.016283897385725336,
+        "correlation_squared": 0.0002651653140688324
+      },
+      "14": {
+        "information_gain": 0.06193837290578941,
+        "gain_ratio": 0.01864535462977468,
+        "symmetric_uncertainty": 0.01864535462977468,
+        "reduction_ratio": 0.01864535462977468,
+        "mutual_info_regression": 0.029396340093097884,
+        "normalized_mi_regression": 0.011710847776850304,
+        "mutual_info_classification": 0.0031752182854587474,
+        "normalized_mi_classification": 0.0013674928944780638,
+        "transfer_entropy": 0,
+        "correlation": -0.04814814547727397,
+        "correlation_squared": 0.0023182439129007374
+      },
+      "30": {
+        "information_gain": 0.07683697975866677,
+        "gain_ratio": 0.0231302356936302,
+        "symmetric_uncertainty": 0.0231302356936302,
+        "reduction_ratio": 0.0231302356936302,
+        "mutual_info_regression": 0.05508724657163366,
+        "normalized_mi_regression": 0.02125398699000013,
+        "mutual_info_classification": 0.00939050601371294,
+        "normalized_mi_classification": 0.004044270808553388,
+        "transfer_entropy": 0,
+        "correlation": -0.06508820620820073,
+        "correlation_squared": 0.00423647458740126
+      }
+    },
+    "mining_hash_rate_mean": {
+      "1": {
+        "information_gain": 0.07882792024488428,
+        "gain_ratio": 0.023729590325716702,
+        "symmetric_uncertainty": 0.023729590325716702,
+        "reduction_ratio": 0.023729590325716702,
+        "mutual_info_regression": 0.053867962004442216,
+        "normalized_mi_regression": 0.027947737741777928,
+        "mutual_info_classification": 0.05188396045199806,
+        "normalized_mi_classification": 0.022345218560207346,
+        "transfer_entropy": 0,
+        "correlation": 0.027580913340493448,
+        "correlation_squared": 0.0007607067806958094
+      },
+      "3": {
+        "information_gain": 0.10436491233960954,
+        "gain_ratio": 0.03141703667160233,
+        "symmetric_uncertainty": 0.03141703667160233,
+        "reduction_ratio": 0.03141703667160233,
+        "mutual_info_regression": 0.05508170528662326,
+        "normalized_mi_regression": 0.023844144530820694,
+        "mutual_info_classification": 0.02841757755565455,
+        "normalized_mi_classification": 0.012238795234489171,
+        "transfer_entropy": 0,
+        "correlation": 0.04663150238175928,
+        "correlation_squared": 0.0021744970143800215
+      },
+      "7": {
+        "information_gain": 0.09892261462305152,
+        "gain_ratio": 0.029778738525535295,
+        "symmetric_uncertainty": 0.029778738525535295,
+        "reduction_ratio": 0.029778738525535295,
+        "mutual_info_regression": 0.07078731601911059,
+        "normalized_mi_regression": 0.030993414413101425,
+        "mutual_info_classification": 0.024717366796239038,
+        "normalized_mi_classification": 0.010645199857342783,
+        "transfer_entropy": 0,
+        "correlation": 0.07143343650651345,
+        "correlation_squared": 0.005102735851130088
+      },
+      "14": {
+        "information_gain": 0.14225455224842953,
+        "gain_ratio": 0.04282299404936193,
+        "symmetric_uncertainty": 0.04282299404936193,
+        "reduction_ratio": 0.04282299404936193,
+        "mutual_info_regression": 0.11623297292220647,
+        "normalized_mi_regression": 0.04630463004006146,
+        "mutual_info_classification": 0.0428071618194239,
+        "normalized_mi_classification": 0.01843605206259933,
+        "transfer_entropy": 0,
+        "correlation": 0.11204739138033386,
+        "correlation_squared": 0.012554617915137714
+      },
+      "30": {
+        "information_gain": 0.21782983136043166,
+        "gain_ratio": 0.06557331321839463,
+        "symmetric_uncertainty": 0.06557331321839463,
+        "reduction_ratio": 0.06557331321839463,
+        "mutual_info_regression": 0.21258654443158997,
+        "normalized_mi_regression": 0.08202101086542113,
+        "mutual_info_classification": 0.1075921682768235,
+        "normalized_mi_classification": 0.04633742470911566,
+        "transfer_entropy": 0,
+        "correlation": 0.16656054954872077,
+        "correlation_squared": 0.027742416665971867
+      }
+    }
+  }
+}
