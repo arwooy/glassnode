@@ -153,8 +153,8 @@ class GlassnodeAdvancedAnalyzer:
                                                  horizons: List[int] = None) -> Dict:
         """计算多个时间窗口的信息增益"""
         if horizons is None:
-            # 默认时间窗口：1天到60天
-            horizons = [1, 2, 3, 5, 7, 10, 14, 21, 30, 45, 60]
+            # 默认时间窗口：1天到180天（6个月）
+            horizons = [1, 2, 3, 5, 7, 10, 14, 21, 30, 45, 60, 90, 120, 150, 180]
         
         results = {}
         
@@ -260,7 +260,8 @@ class GlassnodeAdvancedAnalyzer:
                                 percentiles: List[float] = None) -> Dict:
         """分析不同阈值过滤后的影响"""
         if percentiles is None:
-            percentiles = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+            # 增加90以上的细粒度分析
+            percentiles = [10, 20, 30, 40, 50, 60, 70, 80, 85, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
         
         results = {}
         
@@ -285,7 +286,7 @@ class GlassnodeAdvancedAnalyzer:
                 
                 # 多个时间窗口的收益
                 returns = {}
-                for days in [1, 7, 30]:
+                for days in [1, 7, 30, 60, 90, 180]:
                     df[f'return_{days}d'] = df['price'].shift(-days) / df['price'] - 1
                     returns[f'{days}d'] = {
                         'mean': df[f'return_{days}d'].mean(),
@@ -356,7 +357,7 @@ class GlassnodeAdvancedAnalyzer:
                     ig_results = self.calculate_information_gain_multi_horizon(
                         combo_series, 
                         price_data,
-                        horizons=[1, 7, 30]
+                        horizons=[1, 7, 30, 60, 90, 180]
                     )
                     
                     if ig_results:
@@ -434,7 +435,7 @@ class GlassnodeAdvancedAnalyzer:
         # 获取价格数据
         print("\n1. 获取价格数据...")
         end_date = datetime.now()
-        start_date = end_date - timedelta(days=365*2)  # 2年数据
+        start_date = end_date - timedelta(days=365*3)  # 3年数据，确保有足够数据进行180天预测
         
         price_df = self.fetch_metric_data('market', 'price_usd_close', start_date, end_date)
         if price_df.empty:
@@ -649,9 +650,9 @@ class GlassnodeAdvancedAnalyzer:
                 return
             
             # 创建热力图
-            plt.figure(figsize=(12, 6))
+            plt.figure(figsize=(16, 8))
             sns.heatmap(ig_matrix, 
-                       xticklabels=[f"{h}天" for h in horizons],
+                       xticklabels=[f"{h}d" if h < 30 else f"{h/30:.0f}m" for h in horizons],
                        yticklabels=indicators,
                        cmap='YlOrRd',
                        annot=True,
@@ -671,10 +672,12 @@ class GlassnodeAdvancedAnalyzer:
     def plot_threshold_impact(self):
         """绘制阈值影响分析图"""
         try:
-            fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+            fig, axes = plt.subplots(3, 2, figsize=(14, 15))
+            axes = axes.flatten()
             
+            # 绘制每个指标的阈值影响
             for idx, (indicator, results) in enumerate(self.indicator_analysis_results.items()):
-                if idx >= 4:
+                if idx >= 5:
                     break
                     
                 if 'threshold_impact' not in results:
@@ -684,30 +687,35 @@ class GlassnodeAdvancedAnalyzer:
                 if not threshold_data:
                     continue
                 
-                ax = axes[idx // 2, idx % 2]
+                ax = axes[idx]
                 
                 # 提取数据
                 percentiles = sorted(threshold_data.keys())
-                returns_7d = []
-                sharpe_7d = []
+                returns_30d = []
+                sharpe_30d = []
                 sample_ratios = []
                 
                 for pct in percentiles:
-                    if '7d' in threshold_data[pct].get('returns', {}):
-                        returns_7d.append(threshold_data[pct]['returns']['7d']['mean'])
-                        sharpe_7d.append(threshold_data[pct]['returns']['7d']['sharpe'])
+                    if '30d' in threshold_data[pct].get('returns', {}):
+                        returns_30d.append(threshold_data[pct]['returns']['30d']['mean'])
+                        sharpe_30d.append(threshold_data[pct]['returns']['30d']['sharpe'])
                         sample_ratios.append(threshold_data[pct]['sample_ratio'])
                 
-                if returns_7d:
+                if returns_30d:
                     ax2 = ax.twinx()
                     
                     # 收益率
-                    line1 = ax.plot(percentiles, returns_7d, 'b-', marker='o', label='7天收益率')
+                    line1 = ax.plot(percentiles, returns_30d, 'b-', marker='o', 
+                                   markersize=4, label='30天收益率')
                     # 夏普比率
-                    line2 = ax2.plot(percentiles, sharpe_7d, 'r-', marker='s', label='夏普比率')
+                    line2 = ax2.plot(percentiles, sharpe_30d, 'r-', marker='s', 
+                                    markersize=4, label='夏普比率')
+                    
+                    # 突出显示90以上的区域
+                    ax.axvspan(90, 99, alpha=0.1, color='yellow')
                     
                     ax.set_xlabel('阈值百分位')
-                    ax.set_ylabel('7天平均收益率', color='b')
+                    ax.set_ylabel('30天平均收益率', color='b')
                     ax2.set_ylabel('夏普比率', color='r')
                     ax.set_title(f'{indicator} 阈值影响分析')
                     ax.grid(True, alpha=0.3)
@@ -717,7 +725,32 @@ class GlassnodeAdvancedAnalyzer:
                     labels = [l.get_label() for l in lines]
                     ax.legend(lines, labels, loc='best')
             
-            plt.suptitle('不同阈值对指标预测效果的影响')
+            # 添加90+细粒度分析图
+            ax = axes[5]
+            
+            # 收集所有指标在90+的表现
+            high_threshold_data = []
+            for indicator, results in self.indicator_analysis_results.items():
+                if 'threshold_impact' in results:
+                    for pct in [90, 91, 92, 93, 94, 95, 96, 97, 98, 99]:
+                        if pct in results['threshold_impact']:
+                            if '30d' in results['threshold_impact'][pct].get('returns', {}):
+                                high_threshold_data.append({
+                                    'indicator': indicator,
+                                    'percentile': pct,
+                                    'sharpe': results['threshold_impact'][pct]['returns']['30d']['sharpe']
+                                })
+            
+            if high_threshold_data:
+                df = pd.DataFrame(high_threshold_data)
+                pivot = df.pivot(index='indicator', columns='percentile', values='sharpe')
+                sns.heatmap(pivot, annot=True, fmt='.2f', cmap='RdYlGn', 
+                           center=0, ax=ax, cbar_kws={'label': '夏普比率'})
+                ax.set_title('90%以上阈值细粒度分析（夏普比率）')
+                ax.set_xlabel('阈值百分位')
+                ax.set_ylabel('指标')
+            
+            plt.suptitle('不同阈值对指标预测效果的影响', fontsize=14, y=1.02)
             plt.tight_layout()
             plt.savefig('advanced_analysis_threshold_impact.png', dpi=100)
             plt.close()
